@@ -1,0 +1,322 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.ham img {
+    width: 25px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 28px;
+}
+
+
+/* ----navigation--- */
+
+.container {
+    background-color: #e9e7e7;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.navbar {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navlist {
+    display: flex;
+}
+
+.navlist li {
+    list-style: none;
+}
+
+.navlist li a {
+    text-decoration: none;
+    padding: 0px 80px;
+    color: black;
+}
+
+.navlist li a:hover {
+    font-weight: bolder;
+}
+
+.button {
+    padding: 0px 80px;
+}
+
+.btn {
+    border: 2px solid black;
+    padding: 9px 17px;
+    font-size: 1.1em;
+    border-radius: 3px;
+}
+
+.btn:hover {
+    color: white;
+    background-color: black;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+}
+
+
+/* --------group1---------------------- */
+
+.group1 {
+    display: flex;
+    margin: 50px 80px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.scribble img {
+    position: absolute;
+    height: 400px;
+    width: 300px;
+    top: -38px;
+    left: -77px;
+    z-index: -1;
+}
+
+.darkscribble img {
+    height: 252px;
+    width: 110px;
+    position: absolute;
+    right: -65px;
+    bottom: -45px;
+    z-index: -1;
+}
+
+.right img {
+    margin: 0px -40px;
+    width: 100%;
+    height: auto;
+}
+
+.left {
+    font-size: 15px;
+}
+
+.left h1 {
+    font-size: 5em;
+}
+
+.left p {
+    font-size: 1.2em;
+}
+
+.group1 h1 {
+    color: #232323;
+    font-weight: 700px;
+}
+
+.group1 p {
+    padding: 16px 20px;
+}
+
+
+/* ----------------group2-------------- */
+
+.group2 {
+    height: 370px;
+    background-color: #232323;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #e9e7e7;
+    position: relative;
+}
+
+.scrb1 {
+    position: absolute;
+    top: 65px;
+    left: 0;
+}
+
+.scrb2 {
+    position: absolute;
+    right: 0;
+    bottom: 28px;
+}
+
+.scrb2 img {
+    width: 362px;
+}
+
+.main {
+    margin: 0px 465px;
+    font-size: 15px;
+}
+
+.main h1 {
+    font-size: 4em;
+}
+
+.main p {
+    padding: 16px;
+    font-size: 1.2em;
+}
+
+
+/* ------------------group3------------- */
+
+.group3 {
+    display: flex;
+    margin: 50px;
+    height: 600px;
+}
+
+.pics {
+    display: flex;
+    margin-top: 100px;
+}
+
+.images {
+    text-align: center;
+    margin: 0 22px;
+}
+
+.images img {
+    width: 100%;
+    height: auto;
+}
+
+.line {
+    margin: 17px;
+    height: 3px;
+    width: 32px;
+    background-color: #232323;
+    margin-left: 2px;
+}
+
+
+/* -----------------------design------------------- */
+
+.design {
+    position: relative;
+}
+
+.plane {
+    padding-left: 50px;
+}
+
+.plane img {
+    width: 50%;
+    height: auto;
+}
+
+.text {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 190px;
+    left: 537px
+}
+
+.text h1 {
+    font-size: 62px;
+    font-weight: 800px;
+}
+
+.ham {
+    display: none;
+}
+
+.ham:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width:1390px) {
+    .group1 {
+        margin: 30px;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    .right img {
+        margin: 50px -18px;
+    }
+    .left {
+        font-size: 10px;
+    }
+    .main {
+        font-size: 10px;
+        margin: 0 45px;
+    }
+    .scrb1 {
+        position: absolute;
+        top: 20px;
+        left: 0;
+    }
+    .scrb1 img {
+        width: 150px;
+        height: 50px;
+    }
+    .scrb2 {
+        position: absolute;
+        right: 0;
+        bottom: 3px;
+    }
+    .scrb2 img {
+        width: 190px;
+    }
+    .pics {
+        flex-wrap: wrap;
+    }
+    .group3 {
+        margin: 0;
+        height: 1500px;
+    }
+    .images {
+        margin: 0 12px;
+        margin-bottom: 98px;
+    }
+    .text {
+        top: 52px;
+        left: 0;
+    }
+    .text h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    .plane {
+        padding-left: 9px;
+    }
+    /* ---------------------bar------------- */
+    .ham {
+        display: block;
+    }
+    .navlist {
+        flex-direction: column;
+    }
+    .navbar {
+        height: 280px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .navlist li {
+        margin: 20px 0;
+    }
+    .h-res {
+        height: 100px;
+    }
+    .v-class {
+        opacity: 0;
+        display: none;
+    }
+    .navbar .btn {
+        font-size: 0.8em;
+    }
+}
